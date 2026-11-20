@@ -1,0 +1,93 @@
+.logo {
+  display: block;
+  width: fit-content;
+  margin: 0.5rem auto 1rem;
+  font-size: 48px;
+  line-height: 1;
+  color: var(--text);
+  transform: rotate(120deg);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  text-align: left;
+}
+.field input {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.field input::placeholder {
+  color: var(--muted);
+}
+
+.field input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 1px var(--blue);
+}
+
+.field.invalid input {
+  border-color: var(--danger);
+}
+
+.error {
+  min-height: 1em;
+  margin-top: 0.3rem;
+  color: var(--danger);
+  font-size: 0.8rem;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: var(--blue);
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit:hover {
+  background-color: var(--blue-hover);
+}
+
+.switch {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.switch a {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+.title,
+.submit {
+  font-family: 'Mont-Heavy', 'Montserrat', Verdana, sans-serif;
+  font-weight: 900;
+}

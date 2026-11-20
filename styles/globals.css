@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+:root {
+  --bg: #151d27;
+  --surface: #1e2834;
+  --border: #38444d;
+  --text: #ffffff;
+  --muted: #8b98a5;
+  --blue: #3c8ee8;
+  --blue-hover: #2f7bd0;
+  --danger: #f4212e;
+}
+
+@font-face {
+  font-family: 'Mont-Heavy';
+  src: url('/fonts/Mont-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-0022, U+0024-007E, U+00A0-00BF, U+2010-2027;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
