@@ -1,1 +1,1 @@
-export const API_URL = 'hackatweet-backend.vercel.app';
+export const API_URL = 'https://hackatweet-backend.vercel.app';
